@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Towers of Hanoi</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body onload="displayDisks()">
+    <h1>Towers of Hanoi</h1>
+    <h4>Instructions</h4>
+    <ul>
+        <li>Move all the disks from the left hand tower onto the right</li>
+        <li>Only one disk can be moved at a time</li>
+        <li>Disks can only be placed onto empty towers OR onto larger disks</li>
+    </ul>
+
+    <div class = "towers">
+        <div class = "tower" id = "left" onclick="moveDisk(this)">
+
+        </div>
+        <div class = "tower" id = "middle">
+
+        </div>
+        <div class = "tower" id = "right">
+
+        </div>
+
+    </div>
+
+    <script src="script.js" />
+</body>
+
+</html>
