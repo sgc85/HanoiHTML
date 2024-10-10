@@ -1,36 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Towers of Hanoi</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href = "style.css">
 </head>
+<body>
 
-<body onload="displayDisks()">
-    <h1>Towers of Hanoi</h1>
-    <h4>Instructions</h4>
-    <ul>
-        <li>Move all the disks from the left hand tower onto the right</li>
-        <li>Only one disk can be moved at a time</li>
-        <li>Disks can only be placed onto empty towers OR onto larger disks</li>
-    </ul>
+<div class="game-container">
+  <div class="tower" id="tower1">
+    <div class="disk" id="disk-3" data-size="3"></div>
+    <div class="disk" id="disk-2" data-size="2"></div>
+    <div class="disk" id="disk-1" data-size="1"></div>
+  </div>
+  <div class="tower" id="tower2"></div>
+  <div class="tower" id="tower3"></div>
+</div>
 
-    <div class = "towers">
-        <div class = "tower" id = "left" onclick="moveDisk(this)">
+<script src = "script.js"></script>
+  
 
-        </div>
-        <div class = "tower" id = "middle">
 
-        </div>
-        <div class = "tower" id = "right">
-
-        </div>
-
-    </div>
-
-    <script src="script.js" />
 </body>
-
 </html>
